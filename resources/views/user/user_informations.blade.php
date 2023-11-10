@@ -11,6 +11,18 @@
     Nazwisko: {{$informations['lastName']}}<br>
     Płeć: {{$informations['sex']}}<br>
     Miasto: {{$informations['city']}}<br>
+    <h3>Hobby:</h3>
+    <ul>
+        @foreach($informations['hobby'] as $hobby)
+            <li>{{$hobby}}</li>
+        @endforeach
+    </ul>
+    <h3>Przedmioty maturalne</h3>
+    <ul>
+        @foreach($informations['school_subjects'] as $subject)
+            <li>{{$subject}}</li>
+        @endforeach
+    </ul>
 
 
 </body>

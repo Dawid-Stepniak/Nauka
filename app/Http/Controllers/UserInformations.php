@@ -12,7 +12,8 @@ class UserInformations extends Controller
             'lastName'=>'Superowy',
             'sex'=>'mężczyzna',
             'city'=>'Poznań',
-            'hobby'=>['taniec','śpiew','aktorstwo']
+            'hobby'=>['taniec','śpiew','aktorstwo'],
+            'school_subjects'=>['matematyka','angielski','polski']
         ];
         return view('user.user_informations',['informations'=>$user_informations]);
     }
