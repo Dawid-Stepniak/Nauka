@@ -28,3 +28,7 @@ Route::middleware([
 });
 
 Route::get('user_informations',[\App\Http\Controllers\UserInformations::class,'showUserInformations']);
+
+Route::view('user_form','user.user_form');
+
+Route::get('UserForm',[\App\Http\Controllers\UserForm::class,'showUser']);

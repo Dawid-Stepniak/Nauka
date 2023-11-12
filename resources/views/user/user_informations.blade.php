@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>Dane uzytkownika</h2>
+    <p>{{print_r($informations)}}</p>
     Imię: {{$informations['firstName']}}<br>
     Nazwisko: {{$informations['lastName']}}<br>
     Płeć: {{$informations['sex']}}<br>
