@@ -32,3 +32,5 @@ Route::get('user_informations',[\App\Http\Controllers\UserInformations::class,'s
 Route::view('user_form','user.user_form');
 
 Route::get('UserForm',[\App\Http\Controllers\UserForm::class,'showUser']);
+
+Route::get('FormularzUzytkownika','user.FormularzUzytkownika');
