@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    Imię podane w formularzu to: {{$user_data['firstName']}}, a nazwisko to {{$user_data['lastName']}}<br><br>
-    Email użytkownika to {{$user_data['email']}}
+    Tabela: <?php print_r($users)?><br>
+    Imię: {{$users[0]->firstName}}
+
+    @dump($users)
+    
 </body>
 </html>

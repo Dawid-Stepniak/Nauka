@@ -33,4 +33,8 @@ Route::view('user_form','user.user_form');
 
 Route::get('UserForm',[\App\Http\Controllers\UserForm::class,'showUser']);
 
-Route::get('FormularzUzytkownika','user.FormularzUzytkownika');
+Route::view('FormularzUzytkownika','user.FormularzUzytkownika');
+
+Route::get('OpisUzytkownika',[\App\Http\Controllers\FormularzUzytkownikaController::class,'PrzekazanieDanych']);
+
+Route::get('showtableusers',[\App\Http\Controllers\ShowTableUsersController::class,'index']);
